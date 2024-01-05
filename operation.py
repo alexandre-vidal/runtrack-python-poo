@@ -16,9 +16,11 @@ class Operation:
         self.__nombre2 = nombre
         
     def addition(self):
-        return self.__nombre1 + self.__nombre2
+        return int(self.__nombre1) + int(self.__nombre2)
         
-operation = Operation(12, 3)
+operation = Operation(input("Entrez le nombre1 : "), input("Entrez le nombre2 : "))
+print("")
 print(operation.get_nombre1())
 print(operation.get_nombre2())
+print("")
 print(operation.addition())
